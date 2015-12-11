@@ -59,14 +59,14 @@ else
 {
 ?>
 <form id="form1" name="form1" method="post" action="insert.php" onSubmit="return validateForm();">
-<table width="500" border="1">
+<table border="1">
   <tr>
-    <td width=200>Username</td>
+    <td>Username</td>
     <td><label for="username"></label>
        <input type="text" name="username" id="username" value="" /></td>
    </tr>
   <tr>
-    <td width=300>Password</td>
+    <td>Password</td>
     <td><label for="psd"></label>
       <input type="text" name="psd" id="psd" value="" /></td>
   </tr>
@@ -83,13 +83,13 @@ else
 <?php
 require_once('conn.php');
 $result = mysql_query("SELECT * FROM tbllogin");
-echo "<table border='2'>";
+echo "<table border='2' width=500|>";
 echo "<th>Username</th><th>Password</th>";
 while($row=mysql_fetch_array($result))
 { echo "<tr>";
 $idn=$row['id'];$un=$row['username'];$pd=$row['psd'];
- echo "<td>".$row['username']." </td>";
-   echo "<td>".$row['psd']."</td>";
+ echo "<td width=200>".$row['username']." </td>";
+   echo "<td width=300>".$row['psd']."</td>";
    echo "<td><a href='delete.php?id=$idn'>Delete</a></td>
    <td><a href='home.php?id=$idn&action=edit&un=$un&pd=$pd'>Edit</a></td>";
 	echo "</tr>";
