@@ -84,7 +84,7 @@ else
 require_once('conn.php');
 $result = mysql_query("SELECT * FROM tbllogin");
 echo "<table border='2' width=500|>";
-echo "<th style="background-color:#f5f5f5;">Username</th><th style="background-color:#f5f5f5;">Password</th>";
+echo "<th style='background-color:#f5f5f5;'>Username</th><th style='background-color:#f5f5f5;'>Password</th>";
 while($row=mysql_fetch_array($result))
 { echo "<tr>";
 $idn=$row['id'];$un=$row['username'];$pd=$row['psd'];
