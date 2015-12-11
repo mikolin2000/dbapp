@@ -1,4 +1,18 @@
 <html>
+<head>
+<style>
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+    font-family: "Arial";
+    font-size: 10px;
+}
+</style>
+</head>
+
 <title>Simple Database Application using PHP</title>
 <h1>Simple Database Application using PHP</h1>
 <script type="text/javascript">
