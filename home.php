@@ -8,7 +8,7 @@ table {
 table, td, th {
     border: 1px solid black;
     font-family: "Arial";
-    font-size: 10px;
+    font-size: 12px;
 }
 </style>
 </head>
@@ -59,14 +59,14 @@ else
 {
 ?>
 <form id="form1" name="form1" method="post" action="insert.php" onSubmit="return validateForm();">
-<table width="200" border="1">
+<table width="500" border="1">
   <tr>
-    <td>Username</td>
+    <td width=200>Username</td>
     <td><label for="username"></label>
        <input type="text" name="username" id="username" value="" /></td>
    </tr>
   <tr>
-    <td>Password</td>
+    <td width=300>Password</td>
     <td><label for="psd"></label>
       <input type="text" name="psd" id="psd" value="" /></td>
   </tr>
