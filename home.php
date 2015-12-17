@@ -96,6 +96,7 @@ $idn=$row['id'];$un=$row['username'];$pd=$row['psd'];
 	}
 echo "</table>";
 
+echo gethostname();
 ?>
 
 </body>
