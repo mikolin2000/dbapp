@@ -5,7 +5,7 @@ table {
     border-collapse: collapse;
 }
 
-table, td, th {
+table, td, th  {
     border: 1px solid black;
     font-family: "Arial";
     font-size: 12px;
@@ -96,7 +96,7 @@ $idn=$row['id'];$un=$row['username'];$pd=$row['psd'];
 	}
 echo "</table>";
 
-echo gethostname();
+echo "<p style=\"font-family: 'Arial'; font-size: 10px; \"> App served from server <b>".gethostname()."</b>.</p>";
 ?>
 
 </body>
